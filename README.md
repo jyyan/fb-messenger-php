@@ -3,6 +3,8 @@ FB Messenger Bot PHP API
 
 This is a PHP implementation for Facebook Messenger Bot API.
 
+And will merge some bugfix from original repo's pull request.
+
 REQUIREMENTS
 ------------
 The minimum requirement is that your Web server supports PHP 5.4.
