@@ -41,7 +41,7 @@ class ImageMessage extends Message
      * @param string $postname
      * @return \CURLFile|string
      */
-    protected function getCurlValue($filename, $contentType, $postname)
+    protected function getCurlValue($filename, $contentType = "", $postname = "")
     {
         // PHP 5.5 introduced a CurlFile object that deprecates the old @filename syntax
         // See: https://wiki.php.net/rfc/curl-file-upload
