@@ -98,9 +98,11 @@ class Attachment
                 'payload' => $this->payload
             ]
         ];
+
         if (!empty($this->fileData)) {
             $data['filedata'] = $this->fileData;
         }
+
         return $data;
     }
 }
