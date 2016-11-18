@@ -4,6 +4,7 @@ namespace pimax;
 
 class UserProfile
 {
+    // profile keyword supported : first_name,last_name,profile_pic,locale,timezone,gender
     protected $data = [];
 
     public function __construct($data)
@@ -13,31 +14,31 @@ class UserProfile
 
     public function getFirstName()
     {
-        return $this->data['first_name'];
+        return ( isset($this->data['first_name']) ? $this->data['first_name'] : '') ;
     }
 
     public function getLastName()
     {
-        return $this->data['last_name'];
+        return ( isset($this->data['last_name']) ? $this->data['last_name'] : '') ;
     }
 
     public function getPicture()
     {
-        return $this->data['profile_pic'];
+        return ( isset($this->data['profile_pic']) ? $this->data['profile_pic'] : '') ;
     }
 
     public function getLocale()
     {
-        return $this->data['locale'];
+        return ( isset($this->data['locale']) ? $this->data['locale'] : '') ;
     }
 
     public function getTimezone()
     {
-        return $this->data['timezone'];
+        return ( isset($this->data['timezone']) ? $this->data['timezone'] : '') ;
     }
 
     public function getGender()
     {
-        return $this->data['gender'];
+        return ( isset($this->data['gender']) ? $this->data['gender'] : '') ;
     }
 }
